@@ -4,9 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="consoleScript.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="title">Tic Tac Toe</div>
+    <div class="options">
+        <div class="replace"><button class="twoPlayer">Play with a friend</button></div>
+        <div class="replace"><button class="bot">Play with computer</button></div>
+    </div>
+    <div class="gameboard">
+        <div class="cells"  data-pos="1" ></div>
+        <div class="cells"  data-pos="2" ></div>
+        <div class="cells"  data-pos="3" ></div>
+        <div class="cells"  data-pos="4" ></div>
+        <div class="cells"  data-pos="5" ></div>
+        <div class="cells"  data-pos="6" ></div>
+        <div class="cells"  data-pos="7" ></div>
+        <div class="cells"  data-pos="8" ></div>
+        <div class="cells"  data-pos="9" ></div>
+    </div>
+    <div class="scoreDisplay">
+        <div class="score1">Player 1 Score ➝ </div>
+        <div class="score2">Player 2 Score ➝ </div>
+    </div>
+    <div class="info"></div>
     
+    <div><button class="restart">restart</button></div>
 </body>
 </html>
