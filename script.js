@@ -411,7 +411,7 @@ onePlayer.addEventListener("click", () =>{
 
 let restart = document.querySelector(".restart");
 restart.addEventListener("click", () => {
-    location.reload();
+    location.reload();  // bored, not in the mood to write the logic for this
 })
 
 
