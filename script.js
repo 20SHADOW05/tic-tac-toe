@@ -127,6 +127,7 @@ function isInvalidInput(gameboard,position){
             }   
         }
     }
+    return true;
 }
 
 function isBoardFull(gameboard) {
@@ -274,7 +275,7 @@ function cp_gameflow() { // i hate this function. absolute trash.
             is_bot = !is_bot; 
             
             if (p2.name === "computer" && is_bot ) {
-                setTimeout(() => {
+            // had to remove the timeout to prevent a bug
                     let cPos;
                     do{
                         cPos = computerPlay();
@@ -317,7 +318,7 @@ function cp_gameflow() { // i hate this function. absolute trash.
                     }
 
                     is_bot = !is_bot; 
-                }, 500);
+               
             }
         });
     });
